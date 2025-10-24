@@ -1,15 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yusuf - Built with Forgeo Code</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - yusuf</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Educational Content Meta Tags -->
+  <meta name="educational-content" content="true">
+  <meta name="content-type" content="educational">
+  <meta name="target-audience" content="students, educators, learners">
+  <meta name="educational-level" content="all-levels">
+  <meta name="keywords" content="education, learning, tutorial, course, training, knowledge, academic, study, research, teaching, eğitim, öğrenim, ders, kurs, öğretim, bilgi, akademik, araştırma, öğrenme, eğitici, bildung, lernen, kurs, ausbildung, wissen, akademisch, forschung, lehre, studium, éducation, apprentissage, cours, formation, connaissance, académique, recherche, enseignement, educación, aprendizaje, curso, formación, conocimiento, académico, investigación, enseñanza, educazione, apprendimento, corso, formazione, conoscenza, accademico, ricerca, insegnamento">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Educational Platform">
+  <meta property="og:description" content="Quality educational content and learning resources for students and educators worldwide.">
+  
+  <!-- Schema.org Educational Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Educational Platform",
+    "description": "Quality educational content and learning resources for students and educators worldwide.",
+    "educationalLevel": "All Levels",
+    "teaches": "education, learning, tutorial, course, training"
+  }
+  </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to yusuf</h1>
-        <p>Start building your website with the Visual Editor!</p>
-    </div>
+
+  <!-- Educational Disclaimer Banner -->
+  <div id="edu-disclaimer" style="display:none;position:fixed;top:0;left:0;right:0;background:linear-gradient(135deg,#1e40af 0%,#3b82f6 100%);color:white;padding:8px 0;text-align:center;font-size:13px;font-family:system-ui,-apple-system,sans-serif;z-index:99999;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+    📚 Educational content platform
+    <button onclick="localStorage.setItem('edu-seen','1');document.getElementById('edu-disclaimer').style.display='none';document.getElementById('edu-spacer').style.display='none';" style="background:rgba(255,255,255,0.2);border:none;color:white;padding:2px 8px;margin-left:10px;border-radius:4px;cursor:pointer;font-size:12px;">✕</button>
+  </div>
+  <div id="edu-spacer" style="display:none;height:40px;"></div>
+  <script>
+    if(!localStorage.getItem('edu-seen')){
+      document.getElementById('edu-disclaimer').style.display='block';
+      document.getElementById('edu-spacer').style.display='block';
+    }
+  </script>
+  <div class="canvas-container">
+    <div style="position:absolute;left:100px;top:100px;width:600px;height:72px;;font-size:48px;color:#333;font-weight:bold;text-align:left;display:flex;align-items:center">Welcome to yusuf</div>
+    <div style="position:absolute;left:48px;top:192px;width:1448px;height:495px;;font-size:16px;color:#333;font-weight:normal;text-align:left;display:flex;align-items:center">prem ve Bina Güvenliği Hakkında
+Merhaba! Bugün deprem ve bina güvenliği hakkında kısa bir konuşma yapmak istiyorum.
+Deprem, yer kabuğunda meydana gelen ani hareketlerle oluşan doğal bir afettir. Bu hareketler, binaların yapısal bütünlüğünü tehdit edebilir. Ancak, binaların ne kadar dayanıklı olduğu, kullanılan malzemelere ve tasarımlarına bağlıdır. Depreme dayanıklı binalar, doğru mühendislik ve tasarım ile inşa edilir. Bu binalar, deprem sırasında daha az hasar alır ve insanların güvenliğini korur.
+Bina inşa ederken dikkat edilmesi gereken birkaç önemli faktör vardır. Birincisi, esneklik. Binaların, deprem sırasında esneyebilmeleri gerekir. Sert yapılar daha fazla hasar görürken, esnek yapılar titreşimleri daha iyi emebilir. İkinci olarak, temel tasarımı çok önemlidir. Binanın temeli ne kadar sağlam olursa, binaların depremde daha az zarar görme ihtimali artar. Ayrıca, binaların yapısal güçlendirme ile güçlendirilmesi de deprem güvenliğini artırır.
+Türkiye gibi deprem bölgesinde yaşayan insanlar için, deprem yönetmeliklerine uymak çok önemlidir. Bu yönetmelikler, binaların depreme karşı dayanıklı olmasını sağlamak için belirli standartlar belirler.
+Sonuç olarak, deprem riskine karşı binaların doğru şekilde inşa edilmesi, hepimizin güvenliği için hayati önem taşır. Hepimiz, güvenli binalarda yaşamak için üzerine düşeni yapmalıyız.
+Teşekkür ederim.</div>
+  </div>
+  <div class="forgeo-badge">
+    <a href="https://code.forgeo.xyz" target="_blank" rel="noopener noreferrer">
+      <span class="badge-icon">⚡</span>
+      <span>Made with Forgeo</span>
+    </a>
+  </div>
+
+  <!-- Forgeo Branding Badge -->
+  <div id="forgeo-badge" style="position:fixed;bottom:10px;right:10px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:10px 16px;border-radius:8px;font-size:13px;font-family:system-ui,-apple-system,sans-serif;z-index:99998;box-shadow:0 4px 12px rgba(102,126,234,0.4);transition:transform 0.2s;">
+    <span style="opacity:0.9;">Made with</span> <a href="https://code.forgeo.xyz" target="_blank" rel="noopener" style="color:white;text-decoration:none;font-weight:600;margin-left:4px;">Forgeo Code ✨</a>
+  </div>
+  <style>
+    #forgeo-badge:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(102,126,234,0.5);
+    }
+    #forgeo-badge a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </body>
 </html>
